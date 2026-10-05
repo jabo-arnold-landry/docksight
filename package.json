@@ -10,7 +10,7 @@
   "scripts": {
     "dev:web": "npm run dev --workspace=@docksight/web",
     "dev:server": "npm run start:dev --workspace=@docksight/server",
-    "build": "npm run build --workspaces --if-present",
+    "build": "node api.js && npm run build --workspaces --if-present",
     "build:web": "npm run build --workspace=@docksight/web",
     "build:server": "npm run build --workspace=@docksight/server",
     "lint": "npm run lint --workspaces --if-present",
